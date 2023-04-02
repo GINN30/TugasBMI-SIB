@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator Body Mass Index</title>
+</head>
+<body>
+    <h1 id="title">Check your BMI</h1>
+    <p id="desc">Enter your weight and height below to check yout BMI results</p>
+    <div class="input">
+        <label for="weight">Berat Badan (KG):</label>
+        <input type="number" name="weight" id="weight" placeholder="Masukkan Berat Badan">
+    </div>
+    <div class="input">
+        <label for="height">Tinggi Badan (CM):</label>
+        <input type="number" name="height" id="height" placeholder="Masukkan Tinggi Badan">
+    </div>
+    <button onclick="calculateBMI()">Calculate BMI</button>
+    <div id="hasil"></div>
+    <script src="script.js"></script>
+</body>
+</html>
