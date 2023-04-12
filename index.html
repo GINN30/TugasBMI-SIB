@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,19 +8,23 @@
     <link rel="stylesheet" href="style.css">
     <title>Calculator Body Mass Index</title>
 </head>
+
 <body>
     <h1 id="title">Check your BMI</h1>
     <p id="desc">Enter your weight and height below to check yout BMI results</p>
-    <div class="input">
+    <form>
         <label for="weight">Berat Badan (KG):</label>
-        <input type="number" name="weight" id="weight" placeholder="Masukkan Berat Badan">
-    </div>
-    <div class="input">
+        <input type="number" id="weight" name="weight" placeholder="Masukkan Berat Badan dalam KG">
+
         <label for="height">Tinggi Badan (CM):</label>
-        <input type="number" name="height" id="height" placeholder="Masukkan Tinggi Badan">
-    </div>
-    <button onclick="calculateBMI()">Calculate BMI</button>
+        <input type="number" id="height" name="height" placeholder="Masukkan Tinggi Badan dalam CM">
+
+        <button type="button" id="hitung" onclick="calculateBMI()">Hitung BMI</button>
+        <button type="button" id="reset" onclick="resetForm()">Reset</button>
+    </form>
+
     <div id="hasil"></div>
     <script src="script.js"></script>
 </body>
+
 </html>

@@ -10,6 +10,10 @@
     text-align: center;
 }
 
+form {
+    justify-content: center;
+    /* border: 1px solid #333; */
+}
 .input {
     display: flex;
     flex-direction: column;
@@ -17,9 +21,11 @@
 }
 
 label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
     margin-bottom: 5px;
-    text-align: center;
-    margin-right: 20%;
+    margin-left: 35.5%;
 }
 
 #weight {
@@ -27,8 +33,9 @@ label {
     justify-content: center;
     align-items: center;
     text-align: start;
-    margin-left: 540px;
-    margin-right: 540px;
+    width: 30%;
+    margin-left: 35.5%;
+    margin-top: 10px;
 }
 
 #height {
@@ -36,14 +43,27 @@ label {
     justify-content: center;
     align-items: center;
     text-align: start;
-    margin-left: 540px;
-    margin-right: 540px;
+    width: 30%;
+    margin-left: 35.5%;
+    margin-bottom: 5px;
+    margin-top: 10px;
 }
 
-button {
+#hitung {
+    margin-top: 10px;
+    margin-bottom: 5px;
     margin-left: 35.5%;
     padding: 10px;
     background-color: #6558f5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#reset {
+    padding: 10px;
+    background-color: #ED2B2A;
     color: white;
     border: none;
     border-radius: 5px;
