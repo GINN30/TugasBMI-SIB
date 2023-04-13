@@ -11,7 +11,7 @@ function calculateBMI() {
 	} else if (weight <= "0" || height <= "0") {
 		alert("Masukkan berat atau tinggi badan bernilai positif");
 		return;
-	} else if (Math.floor(weight).toString().length >= 3) {
+	} else if (Math.floor(weight).toString().length >= 4) {
 		alert("Harap masukkan berat badan dengan kurang dari 3 digit.");
 		return;
 	} else if (weight.toString().split(".")[1] ?.length === 1 || height.toString().split(".")[1] ?.length === 1) {
